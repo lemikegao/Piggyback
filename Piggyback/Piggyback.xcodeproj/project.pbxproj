@@ -13,11 +13,21 @@
 		C4EB78D71699A7FE00E5D5E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4EB78D51699A7FE00E5D5E0 /* InfoPlist.strings */; };
 		C4EB78D91699A7FE00E5D5E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB78D81699A7FE00E5D5E0 /* main.m */; };
 		C4EB78DD1699A7FE00E5D5E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB78DC1699A7FE00E5D5E0 /* AppDelegate.m */; };
-		C4EB78DF1699A7FE00E5D5E0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB78DE1699A7FE00E5D5E0 /* Default.png */; };
-		C4EB78E11699A7FE00E5D5E0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB78E01699A7FE00E5D5E0 /* Default@2x.png */; };
 		C4EB78E31699A7FE00E5D5E0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB78E21699A7FE00E5D5E0 /* Default-568h@2x.png */; };
 		C4EB78E61699A7FE00E5D5E0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EB78E41699A7FE00E5D5E0 /* MainStoryboard.storyboard */; };
-		C4EB78E91699A7FE00E5D5E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB78E81699A7FE00E5D5E0 /* ViewController.m */; };
+		C4EB78F01699A83A00E5D5E0 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB78EF1699A83A00E5D5E0 /* Icon@2x.png */; };
+		C4EB78F21699A83D00E5D5E0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB78F11699A83D00E5D5E0 /* Icon.png */; };
+		C4EB790E1699A88900E5D5E0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB790D1699A88900E5D5E0 /* LoginViewController.m */; };
+		C4EB79121699A91400E5D5E0 /* piggyback-signin.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB79101699A91400E5D5E0 /* piggyback-signin.png */; };
+		C4EB79131699A91400E5D5E0 /* piggyback-signin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB79111699A91400E5D5E0 /* piggyback-signin@2x.png */; };
+		C4EB79161699A91E00E5D5E0 /* facebook-signin-button.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB79141699A91E00E5D5E0 /* facebook-signin-button.png */; };
+		C4EB79171699A91E00E5D5E0 /* facebook-signin-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB79151699A91E00E5D5E0 /* facebook-signin-button@2x.png */; };
+		C4EB791A1699A93600E5D5E0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB79181699A93600E5D5E0 /* Default.png */; };
+		C4EB791B1699A93600E5D5E0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4EB79191699A93600E5D5E0 /* Default@2x.png */; };
+		C4EB792E1699AB3700E5D5E0 /* FBConnect.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C4EB791F1699AB3700E5D5E0 /* FBConnect.bundle */; };
+		C4EB792F1699AB3700E5D5E0 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C4EB79211699AB3700E5D5E0 /* FBDialog.bundle */; };
+		C4EB79301699AB3700E5D5E0 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB79271699AB3700E5D5E0 /* libfacebook_ios_sdk.a */; };
+		C4EB79331699AD9400E5D5E0 /* PiggybackTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EB79321699AD9400E5D5E0 /* PiggybackTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,12 +41,37 @@
 		C4EB78DA1699A7FE00E5D5E0 /* Piggyback-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Piggyback-Prefix.pch"; sourceTree = "<group>"; };
 		C4EB78DB1699A7FE00E5D5E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4EB78DC1699A7FE00E5D5E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C4EB78DE1699A7FE00E5D5E0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		C4EB78E01699A7FE00E5D5E0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C4EB78E21699A7FE00E5D5E0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C4EB78E51699A7FE00E5D5E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C4EB78E71699A7FE00E5D5E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C4EB78E81699A7FE00E5D5E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C4EB78EF1699A83A00E5D5E0 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		C4EB78F11699A83D00E5D5E0 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		C4EB790C1699A88900E5D5E0 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C4EB790D1699A88900E5D5E0 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C4EB79101699A91400E5D5E0 /* piggyback-signin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piggyback-signin.png"; sourceTree = "<group>"; };
+		C4EB79111699A91400E5D5E0 /* piggyback-signin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "piggyback-signin@2x.png"; sourceTree = "<group>"; };
+		C4EB79141699A91E00E5D5E0 /* facebook-signin-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-signin-button.png"; sourceTree = "<group>"; };
+		C4EB79151699A91E00E5D5E0 /* facebook-signin-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-signin-button@2x.png"; sourceTree = "<group>"; };
+		C4EB79181699A93600E5D5E0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C4EB79191699A93600E5D5E0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C4EB791E1699AB3700E5D5E0 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		C4EB791F1699AB3700E5D5E0 /* FBConnect.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBConnect.bundle; sourceTree = "<group>"; };
+		C4EB79201699AB3700E5D5E0 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		C4EB79211699AB3700E5D5E0 /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		C4EB79221699AB3700E5D5E0 /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		C4EB79231699AB3700E5D5E0 /* FBFrictionlessRequestSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFrictionlessRequestSettings.h; sourceTree = "<group>"; };
+		C4EB79241699AB3700E5D5E0 /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		C4EB79251699AB3700E5D5E0 /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		C4EB79261699AB3700E5D5E0 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		C4EB79271699AB3700E5D5E0 /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfacebook_ios_sdk.a; sourceTree = "<group>"; };
+		C4EB79281699AB3700E5D5E0 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		C4EB79291699AB3700E5D5E0 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		C4EB792A1699AB3700E5D5E0 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		C4EB792B1699AB3700E5D5E0 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		C4EB792C1699AB3700E5D5E0 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		C4EB792D1699AB3700E5D5E0 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		C4EB79311699AD9400E5D5E0 /* PiggybackTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PiggybackTabBarController.h; sourceTree = "<group>"; };
+		C4EB79321699AD9400E5D5E0 /* PiggybackTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PiggybackTabBarController.m; sourceTree = "<group>"; };
+		C4EB79351699ADF700E5D5E0 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +82,7 @@
 				C4EB78CD1699A7FE00E5D5E0 /* UIKit.framework in Frameworks */,
 				C4EB78CF1699A7FE00E5D5E0 /* Foundation.framework in Frameworks */,
 				C4EB78D11699A7FE00E5D5E0 /* CoreGraphics.framework in Frameworks */,
+				C4EB79301699AB3700E5D5E0 /* libfacebook_ios_sdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				C4EB78D21699A7FE00E5D5E0 /* Piggyback */,
+				C4EB790F1699A8F200E5D5E0 /* Resources */,
+				C4EB791C1699AB0400E5D5E0 /* Libraries */,
 				C4EB78CB1699A7FE00E5D5E0 /* Frameworks */,
 				C4EB78C91699A7FE00E5D5E0 /* Products */,
 			);
@@ -83,11 +121,14 @@
 		C4EB78D21699A7FE00E5D5E0 /* Piggyback */ = {
 			isa = PBXGroup;
 			children = (
+				C4EB78E41699A7FE00E5D5E0 /* MainStoryboard.storyboard */,
 				C4EB78DB1699A7FE00E5D5E0 /* AppDelegate.h */,
 				C4EB78DC1699A7FE00E5D5E0 /* AppDelegate.m */,
-				C4EB78E41699A7FE00E5D5E0 /* MainStoryboard.storyboard */,
-				C4EB78E71699A7FE00E5D5E0 /* ViewController.h */,
-				C4EB78E81699A7FE00E5D5E0 /* ViewController.m */,
+				C4EB790C1699A88900E5D5E0 /* LoginViewController.h */,
+				C4EB790D1699A88900E5D5E0 /* LoginViewController.m */,
+				C4EB79311699AD9400E5D5E0 /* PiggybackTabBarController.h */,
+				C4EB79321699AD9400E5D5E0 /* PiggybackTabBarController.m */,
+				C4EB79351699ADF700E5D5E0 /* Constants.h */,
 				C4EB78D31699A7FE00E5D5E0 /* Supporting Files */,
 			);
 			path = Piggyback;
@@ -100,11 +141,57 @@
 				C4EB78D51699A7FE00E5D5E0 /* InfoPlist.strings */,
 				C4EB78D81699A7FE00E5D5E0 /* main.m */,
 				C4EB78DA1699A7FE00E5D5E0 /* Piggyback-Prefix.pch */,
-				C4EB78DE1699A7FE00E5D5E0 /* Default.png */,
-				C4EB78E01699A7FE00E5D5E0 /* Default@2x.png */,
+				C4EB78F11699A83D00E5D5E0 /* Icon.png */,
+				C4EB78EF1699A83A00E5D5E0 /* Icon@2x.png */,
+				C4EB79181699A93600E5D5E0 /* Default.png */,
+				C4EB79191699A93600E5D5E0 /* Default@2x.png */,
 				C4EB78E21699A7FE00E5D5E0 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4EB790F1699A8F200E5D5E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4EB79101699A91400E5D5E0 /* piggyback-signin.png */,
+				C4EB79111699A91400E5D5E0 /* piggyback-signin@2x.png */,
+				C4EB79141699A91E00E5D5E0 /* facebook-signin-button.png */,
+				C4EB79151699A91E00E5D5E0 /* facebook-signin-button@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C4EB791C1699AB0400E5D5E0 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C4EB791D1699AB3700E5D5E0 /* facebook-ios-sdk */,
+			);
+			name = Libraries;
+			path = Piggyback;
+			sourceTree = "<group>";
+		};
+		C4EB791D1699AB3700E5D5E0 /* facebook-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				C4EB791E1699AB3700E5D5E0 /* Facebook.h */,
+				C4EB791F1699AB3700E5D5E0 /* FBConnect.bundle */,
+				C4EB79201699AB3700E5D5E0 /* FBConnect.h */,
+				C4EB79211699AB3700E5D5E0 /* FBDialog.bundle */,
+				C4EB79221699AB3700E5D5E0 /* FBDialog.h */,
+				C4EB79231699AB3700E5D5E0 /* FBFrictionlessRequestSettings.h */,
+				C4EB79241699AB3700E5D5E0 /* FBLoginDialog.h */,
+				C4EB79251699AB3700E5D5E0 /* FBRequest.h */,
+				C4EB79261699AB3700E5D5E0 /* JSON.h */,
+				C4EB79271699AB3700E5D5E0 /* libfacebook_ios_sdk.a */,
+				C4EB79281699AB3700E5D5E0 /* NSObject+SBJSON.h */,
+				C4EB79291699AB3700E5D5E0 /* NSString+SBJSON.h */,
+				C4EB792A1699AB3700E5D5E0 /* SBJSON.h */,
+				C4EB792B1699AB3700E5D5E0 /* SBJsonBase.h */,
+				C4EB792C1699AB3700E5D5E0 /* SBJsonParser.h */,
+				C4EB792D1699AB3700E5D5E0 /* SBJsonWriter.h */,
+			);
+			name = "facebook-ios-sdk";
+			path = "../../facebook-ios-sdk";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,10 +246,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4EB78D71699A7FE00E5D5E0 /* InfoPlist.strings in Resources */,
-				C4EB78DF1699A7FE00E5D5E0 /* Default.png in Resources */,
-				C4EB78E11699A7FE00E5D5E0 /* Default@2x.png in Resources */,
 				C4EB78E31699A7FE00E5D5E0 /* Default-568h@2x.png in Resources */,
 				C4EB78E61699A7FE00E5D5E0 /* MainStoryboard.storyboard in Resources */,
+				C4EB78F01699A83A00E5D5E0 /* Icon@2x.png in Resources */,
+				C4EB78F21699A83D00E5D5E0 /* Icon.png in Resources */,
+				C4EB79121699A91400E5D5E0 /* piggyback-signin.png in Resources */,
+				C4EB79131699A91400E5D5E0 /* piggyback-signin@2x.png in Resources */,
+				C4EB79161699A91E00E5D5E0 /* facebook-signin-button.png in Resources */,
+				C4EB79171699A91E00E5D5E0 /* facebook-signin-button@2x.png in Resources */,
+				C4EB791A1699A93600E5D5E0 /* Default.png in Resources */,
+				C4EB791B1699A93600E5D5E0 /* Default@2x.png in Resources */,
+				C4EB792E1699AB3700E5D5E0 /* FBConnect.bundle in Resources */,
+				C4EB792F1699AB3700E5D5E0 /* FBDialog.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +270,8 @@
 			files = (
 				C4EB78D91699A7FE00E5D5E0 /* main.m in Sources */,
 				C4EB78DD1699A7FE00E5D5E0 /* AppDelegate.m in Sources */,
-				C4EB78E91699A7FE00E5D5E0 /* ViewController.m in Sources */,
+				C4EB790E1699A88900E5D5E0 /* LoginViewController.m in Sources */,
+				C4EB79331699AD9400E5D5E0 /* PiggybackTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +353,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Piggyback/Piggyback-Prefix.pch";
 				INFOPLIST_FILE = "Piggyback/Piggyback-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../facebook-ios-sdk\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -268,6 +369,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Piggyback/Piggyback-Prefix.pch";
 				INFOPLIST_FILE = "Piggyback/Piggyback-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../facebook-ios-sdk\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
