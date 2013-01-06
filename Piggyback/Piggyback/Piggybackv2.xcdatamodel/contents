@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C3006" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PBFriend" representedClassName="PBFriend" syncable="YES">
+        <attribute name="fbId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spotifyUsername" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PBMusicActivity" representedClassName="PBMusicActivity" syncable="YES">
+        <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="musicActivityId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="musicActivityType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="musicItemId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="musicItem" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PBMusicItem" inverseName="musicActivity" inverseEntity="PBMusicItem" syncable="YES"/>
+        <relationship name="user" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PBUser" inverseName="musicActivity" inverseEntity="PBUser" syncable="YES"/>
+    </entity>
+    <entity name="PBMusicItem" representedClassName="PBMusicItem" syncable="YES">
+        <attribute name="albumCover" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="albumTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="albumYear" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="artistName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="musicItemId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="songDuration" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="songTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spotifyUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="musicActivity" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PBMusicActivity" inverseName="musicItem" inverseEntity="PBMusicActivity" syncable="YES"/>
+    </entity>
+    <entity name="PBUser" representedClassName="PBUser" syncable="YES">
+        <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fbId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spotifyUsername" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="musicActivity" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PBMusicActivity" inverseName="user" inverseEntity="PBMusicActivity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PBFriend" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="PBMusicActivity" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="PBMusicItem" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="PBUser" positionX="0" positionY="0" width="128" height="150"/>
+    </elements>
+</model>

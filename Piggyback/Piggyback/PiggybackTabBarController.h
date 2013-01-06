@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "FBConnect.h"
-//#import "SetAmbassadorsNavigationController.h"
-//#import "FoursquareDelegate.h"
+#import "SetAmbassadorsNavigationController.h"
 
 @interface PiggybackTabBarController : UITabBarController <FBRequestDelegate>
 
 @property int currentFbAPICall;
-//@property (nonatomic, strong) SetAmbassadorsNavigationController* setAmbassadorsNavigationController;
-//@property (nonatomic, strong) FoursquareDelegate* foursquareDelegate;
+@property (nonatomic, strong) SetAmbassadorsNavigationController* setAmbassadorsNavigationController;
+
 @end

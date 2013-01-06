@@ -7,12 +7,11 @@
 //
 
 #import "PiggybackTabBarController.h"
-//#import "YouTubeTableViewController.h"
-//#import "SetAmbassadorsViewController.h"
+#import "SetAmbassadorsViewController.h"
 #import "AppDelegate.h"
 #import "Constants.h"
-//#import "PBUser.h"
-//#import "PBFriend.h"
+#import "PBUser.h"
+#import "PBFriend.h"
 
 @interface PiggybackTabBarController ()
 @end
@@ -33,24 +32,27 @@
     NSLog(@"firstname: %@", [defaults objectForKey:@"FirstName"]);
 
     // store new user in core data and server db if not exists yet
-//    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"fbId = %@",[defaults objectForKey:@"FBID"]];
-//    PBUser *user = [PBUser objectWithPredicate:predicate];
-//    if (!user) {
-//        PBUser *newUser = [PBUser object];
-//        newUser.fbId = [NSNumber numberWithLongLong:[[defaults objectForKey:@"FBID"] longLongValue]];
-//        newUser.email = [defaults objectForKey:@"Email"];
-//        newUser.firstName = [defaults objectForKey:@"FirstName"];
-//        newUser.lastName = [defaults objectForKey:@"LastName"];
-//        newUser.isPiggybackUser = [NSNumber numberWithBool:YES];
-//        
-//        NSString* thumbnailURL = [NSString stringWithFormat:@"http://graph.facebook.com/%@/picture",newUser.fbId];
-//        newUser.thumbnail = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:thumbnailURL]]];
-//        
-//        [[RKObjectManager sharedManager] postObject:newUser delegate:self];
-//    } else {
-//        [defaults setObject:user.uid forKey:@"UID"];
-//        [defaults synchronize];
-//    }
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"fbId = %@",[defaults objectForKey:@"FBID"]];
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"PBUser"];
+    fetchRequest.predicate = predicate;
+    NSManagedObjectContext *context = [(AppDelegate*)[[UIApplication sharedApplication] delegate] managedObjectContext];
+    NSError *error;
+    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+    if ([fetchedObjects count] == 0) {
+        // add new user
+        NSManagedObject *user = [NSEntityDescription insertNewObjectForEntityForName:@"PBUser" inManagedObjectContext:context];
+        [user setValue:[NSNumber numberWithLongLong:[[defaults objectForKey:@"FBID"] longLongValue]] forKey:@"fbId"];
+        [user setValue:[defaults objectForKey:@"FirstName"] forKey:@"firstName"];
+        [user setValue:[defaults objectForKey:@"LastName"] forKey:@"lastName"];
+        [user setValue:[NSNumber numberWithInt:1] forKey:@"uid"];
+        if (![context save:&error]) {
+            NSLog(@"Couldn't save new user: %@", [error localizedDescription]);
+        }
+    } else {
+        PBUser *user = [fetchedObjects objectAtIndex:0];
+        [defaults setObject:user.uid forKey:@"UID"];
+        [defaults synchronize];
+    }
 }
 
 - (void)getFriendsOfCurrentUser {
@@ -132,7 +134,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    self.setAmbassadorsNavigationController = [self.storyboard instantiateViewControllerWithIdentifier:@"setAmbassadorsNavigationViewController"];
+    self.setAmbassadorsNavigationController = [self.storyboard instantiateViewControllerWithIdentifier:@"setAmbassadorsNavigationViewController"];
 }
 
 @end
